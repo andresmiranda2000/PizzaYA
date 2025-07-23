@@ -1,0 +1,6 @@
+[
+  { "id": 1, "nombre": "Pizza Pepperoni", "categoria": "Plato fuerte" },
+  { "id": 2, "nombre": "Pizza Margarita", "categoria": "Plato fuerte" },
+  { "id": 3, "nombre": "Refresco", "categoria": "Bebidas" },
+  { "id": 4, "nombre": "Brownie", "categoria": "Postre" }
+]
