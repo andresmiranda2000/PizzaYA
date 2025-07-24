@@ -1,6 +1,34 @@
 [
-  { "id": 1, "nombre": "Pizza Pepperoni", "categoria": "Plato fuerte" },
-  { "id": 2, "nombre": "Pizza Margarita", "categoria": "Plato fuerte" },
-  { "id": 3, "nombre": "Refresco", "categoria": "Bebidas" },
-  { "id": 4, "nombre": "Brownie", "categoria": "Postre" }
+  {
+    "id": 1,
+    "nombre": "Pizza Pepperoni",
+    "categoria": "Plato fuerte",
+    "descripcion": "Pizza con pepperoni, salsa de tomate y queso mozzarella",
+    "precio": 8.50,
+    "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Pizza Margarita",
+    "categoria": "Plato fuerte",
+    "descripcion": "Pizza clásica con salsa de tomate, queso y albahaca",
+    "precio": 7.50,
+    "imagen": "https://t3.ftcdn.net/jpg/10/31/10/12/360_F_1031101290_diS1RPJnOwIc4J6dUY0JPZiMeaFPJHoS.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Refresco",
+    "categoria": "Bebidas",
+    "descripcion": "Bebida gaseosa",
+    "precio": 1.50,
+    "imagen": "https://media.istockphoto.com/id/1225230295/es/foto/cierre-el-vaso-de-refrescante-cola.jpg?s=612x612&w=0&k=20&c=o60iA_MJGuwRUYmd8AK8lp-LGcNInE1jFTsfHtYN1iw="
+  },
+  {
+    "id": 4,
+    "nombre": "Brownie",
+    "categoria": "Postre",
+    "descripcion": "Brownie de chocolate",
+    "precio": 3.00,
+    "imagen": "https://media.istockphoto.com/id/1164164510/es/foto/brownies-de-chocolate-sobre-mesa-de-madera-r%C3%BAstica.jpg?s=612x612&w=0&k=20&c=IAKKQAhlydtl--CFiTDk8KSf3oLXOYh7SIVyXMoVAJI="
+  }
 ]

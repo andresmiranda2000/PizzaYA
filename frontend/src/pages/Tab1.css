@@ -1,0 +1,35 @@
+.menu-content {
+  background-color: white;
+  padding: 0;
+}
+
+.menu-item {
+  margin-bottom: 24px;
+}
+
+.menu-imagen {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.menu-detalle {
+  padding: 8px 16px;
+}
+
+.menu-detalle h2 {
+  margin: 4px 0;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.menu-detalle p {
+  margin: 2px 0;
+  color: #d6d6d6;
+}
+
+.precio {
+  font-weight: bold;
+  color: #ffffff;
+}

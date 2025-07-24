@@ -1,4 +1,3 @@
-// src/pages/Tab3.tsx
 import {
   IonPage,
   IonContent
@@ -12,16 +11,18 @@ const Tab3: React.FC = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      history.push('/menu'); 
-    }, 3000);
+      history.push('/Tab1'); 
+    }, 5000);
     return () => clearTimeout(timer);
   }, [history]);
 
   return (
     <IonPage>
-      <IonContent className="inicio">
-        <img src="/assets/pizza-logo.png" alt="Logo Pizza" className="logo" />
-        <h1>¡Bienvenido a PizzaApp!</h1>
+      <IonContent fullscreen className="tab3-content">
+        <div className="tab3-background">
+          <img src="/logo.png" alt="Logo" className="tab3-logo" />
+          <h1>¡Bienvenido a PizzaYA!</h1>
+        </div>
       </IonContent>
     </IonPage>
   );

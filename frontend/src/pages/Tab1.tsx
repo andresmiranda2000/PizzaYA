@@ -1,19 +1,17 @@
 import {
   IonPage,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
   IonContent,
-  IonList,
-  IonItem,
-  IonLabel,
 } from '@ionic/react';
 import { useEffect, useState } from 'react';
+import './Tab1.css';
 
 interface Plato {
   id: number;
   nombre: string;
   categoria: string;
+  descripcion: string;
+  precio: number;
+  imagen: string;
 }
 
 const Tab1: React.FC = () => {
@@ -27,22 +25,17 @@ const Tab1: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Menú</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-        <IonList>
-          {menu.map((plato) => (
-            <IonItem key={plato.id}>
-              <IonLabel>
-                <h2>{plato.nombre}</h2>
-                <p>{plato.categoria}</p>
-              </IonLabel>
-            </IonItem>
-          ))}
-        </IonList>
+      <IonContent className="menu-content">
+        {menu.map((plato) => (
+          <div key={plato.id} className="menu-item">
+            <img src={plato.imagen} alt={plato.nombre} className="menu-imagen" />
+            <div className="menu-detalle">
+              <h2>{plato.nombre}</h2>
+              <p>{plato.descripcion}</p>
+              <p className="precio">${plato.precio.toFixed(2)}</p>
+            </div>
+          </div>
+        ))}
       </IonContent>
     </IonPage>
   );
