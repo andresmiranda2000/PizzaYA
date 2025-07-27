@@ -1,0 +1,40 @@
+.pedido-content {
+  --background: #121212; 
+  padding: 16px;
+}
+
+
+.pedido-vacio {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  color: #999;
+}
+
+.ion-item {
+  --background: transparent;
+  --border-width: 0;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.ion-list {
+  background: transparent;
+}
+
+.ion-label {
+  color: white;
+}
+
+.pedido-vacio {
+  text-align: center;
+  margin-top: 50px;
+  color: #d1d1d1;
+  font-size: 18px;
+}

@@ -20,8 +20,7 @@ const Tab3: React.FC = () => {
     <IonPage>
       <IonContent fullscreen className="tab3-content">
         <div className="tab3-background">
-          <img src="/logo.png" alt="Logo" className="tab3-logo" />
-          <h1>¡Bienvenido a PizzaYA!</h1>
+          <h1>¡PizzaYA!</h1>
         </div>
       </IonContent>
     </IonPage>

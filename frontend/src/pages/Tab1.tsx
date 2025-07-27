@@ -2,9 +2,7 @@ import {
   IonPage,
   IonContent,
   IonButton,
-  IonItem,
-  IonInput,
-  IonModal,
+  IonToast
 } from '@ionic/react';
 import { useEffect, useState, useContext } from 'react';
 import './Tab1.css';
@@ -21,15 +19,8 @@ interface Plato {
 
 const Tab1: React.FC = () => {
   const [menu, setMenu] = useState<Plato[]>([]);
-  const [mostrarModal, setMostrarModal] = useState(false);
-  const [platoSeleccionado, setPlatoSeleccionado] = useState<Plato | null>(null);
-
-  const [nombre, setNombre] = useState('');
-  const [apellido, setApellido] = useState('');
-  const [correo, setCorreo] = useState('');
-  const [direccion, setDireccion] = useState('');
-
   const { agregarPedido } = useContext(PedidoContext);
+  const [mostrarToast, setMostrarToast] = useState(false);
 
   useEffect(() => {
     fetch('http://localhost:4000/api/menu')
@@ -37,33 +28,19 @@ const Tab1: React.FC = () => {
       .then((data) => setMenu(data));
   }, []);
 
-  const abrirModal = (plato: Plato) => {
-    setPlatoSeleccionado(plato);
-    setMostrarModal(true);
-  };
+  const agregarDirecto = (plato: Plato) => {
+    agregarPedido({
+      id: Date.now(),
+      plato: plato.nombre,
+      precio: plato.precio,
+      nombre: '',
+      apellido: '',
+      correo: '',
+      direccion: '',
+      imagen: plato.imagen
+    });
 
-  const cerrarModal = () => {
-    setMostrarModal(false);
-    setNombre('');
-    setApellido('');
-    setCorreo('');
-    setDireccion('');
-    setPlatoSeleccionado(null);
-  };
-
-  const confirmar = () => {
-    if (platoSeleccionado) {
-      agregarPedido({
-        id: Date.now(),
-        plato: platoSeleccionado.nombre,
-        precio: platoSeleccionado.precio,
-        nombre,
-        apellido,
-        correo,
-        direccion,
-      });
-      cerrarModal();
-    }
+    setMostrarToast(true); 
   };
 
   return (
@@ -71,27 +48,36 @@ const Tab1: React.FC = () => {
       <IonContent className="menu-content">
         {menu.map((plato) => (
           <div key={plato.id} className="menu-item">
-            <img src={plato.imagen} alt={plato.nombre} className="menu-imagen" />
-            <div className="menu-detalle">
-              <h2>{plato.nombre}</h2>
-              <p>{plato.descripcion}</p>
-              <p className="precio">${plato.precio.toFixed(2)}</p>
-              <IonButton onClick={() => abrirModal(plato)}>Pedir</IonButton>
+            <div className="menu-info">
+              <div className="menu-texto">
+                <h2>{plato.nombre}</h2>
+                <p className="menu-precio">USD {plato.precio.toFixed(2)}</p>
+                <p className="menu-desc">{plato.descripcion}</p>
+              </div>
+              <div className="menu-imagen-container">
+                <img src={plato.imagen} alt={plato.nombre} className="menu-imagen" />
+                <IonButton
+                  className="menu-boton"
+                  onClick={() => agregarDirecto(plato)}
+                  shape="round"
+                  fill="solid"
+                  color="primary"
+                  size="small"
+                >
+                  +
+                </IonButton>
+              </div>
             </div>
           </div>
         ))}
 
-        <IonModal isOpen={mostrarModal} onDidDismiss={cerrarModal}>
-          <IonContent className="ion-padding">
-            <h2>Datos del Cliente</h2>
-            <IonItem><IonInput label="Nombre" value={nombre} onIonChange={e => setNombre(e.detail.value!)} /></IonItem>
-            <IonItem><IonInput label="Apellido" value={apellido} onIonChange={e => setApellido(e.detail.value!)} /></IonItem>
-            <IonItem><IonInput label="Correo" value={correo} onIonChange={e => setCorreo(e.detail.value!)} /></IonItem>
-            <IonItem><IonInput label="Dirección" value={direccion} onIonChange={e => setDireccion(e.detail.value!)} /></IonItem>
-            <IonButton expand="block" onClick={confirmar}>Añadir a pedidos</IonButton>
-            <IonButton expand="block" color="medium" onClick={cerrarModal}>Cancelar</IonButton>
-          </IonContent>
-        </IonModal>
+        <IonToast
+          isOpen={mostrarToast}
+          onDidDismiss={() => setMostrarToast(false)}
+          message="Artículo agregado"
+          duration={1500}
+          color="success"
+        />
       </IonContent>
     </IonPage>
   );

@@ -8,7 +8,9 @@ export interface Pedido {
   apellido: string;
   correo: string;
   direccion: string;
+  imagen: string;
 }
+
 
 interface PedidoContextType {
   pedidos: Pedido[];
