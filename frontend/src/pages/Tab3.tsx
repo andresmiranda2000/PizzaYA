@@ -1,26 +1,27 @@
-import {
-  IonPage,
-  IonContent
-} from '@ionic/react';
-import { useEffect } from 'react';
-import { useHistory } from 'react-router';
-import './Tab3.css';
+import { IonContent, IonPage } from "@ionic/react";
+import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import "./Tab3.css";
 
 const Tab3: React.FC = () => {
   const history = useHistory();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      history.push('/Tab1'); 
-    }, 5000);
+      history.push("/tab1");
+    }, 3000);
+
     return () => clearTimeout(timer);
-  }, [history]);
+  }, []);
 
   return (
     <IonPage>
-      <IonContent fullscreen className="tab3-content">
-        <div className="tab3-background">
-          <h1>¡PizzaYA!</h1>
+      <IonContent fullscreen className="pantalla-inicio">
+        <div className="logo-inicio">
+          <h1>
+            <span className="pizza-text">Pizza</span>
+            <span className="ya-text">YA</span>
+          </h1>
         </div>
       </IonContent>
     </IonPage>

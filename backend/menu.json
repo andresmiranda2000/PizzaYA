@@ -17,18 +17,50 @@
   },
   {
     "id": 3,
+    "nombre": "Pizza Hawaiana",
+    "categoria": "Plato fuerte",
+    "descripcion": "Pizza con jamón, piña y mozzarella",
+    "precio": 9.00,
+    "imagen": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg"
+  },
+  {
+    "id": 4,
     "nombre": "Refresco",
     "categoria": "Bebidas",
     "descripcion": "Bebida gaseosa",
     "precio": 1.50,
-    "imagen": "https://media.istockphoto.com/id/1225230295/es/foto/cierre-el-vaso-de-refrescante-cola.jpg?s=612x612&w=0&k=20&c=o60iA_MJGuwRUYmd8AK8lp-LGcNInE1jFTsfHtYN1iw="
+    "imagen": "https://media.istockphoto.com/id/1225230295/es/foto/cierre-el-vaso-de-refrescante-cola.jpg"
   },
   {
-    "id": 4,
+    "id": 5,
+    "nombre": "Limonada Natural",
+    "categoria": "Bebidas",
+    "descripcion": "Refrescante limonada con hierbabuena",
+    "precio": 2.00,
+    "imagen": "https://cdn.pixabay.com/photo/2017/04/23/20/24/lemonade-2259264_960_720.jpg"
+  },
+  {
+    "id": 6,
     "nombre": "Brownie",
     "categoria": "Postre",
     "descripcion": "Brownie de chocolate",
     "precio": 3.00,
-    "imagen": "https://media.istockphoto.com/id/1164164510/es/foto/brownies-de-chocolate-sobre-mesa-de-madera-r%C3%BAstica.jpg?s=612x612&w=0&k=20&c=IAKKQAhlydtl--CFiTDk8KSf3oLXOYh7SIVyXMoVAJI="
+    "imagen": "https://media.istockphoto.com/id/1164164510/es/foto/brownies-de-chocolate-sobre-mesa-de-madera-r%C3%BAstica.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Helado de Vainilla",
+    "categoria": "Postre",
+    "descripcion": "Delicioso helado artesanal",
+    "precio": 2.50,
+    "imagen": "https://cdn.pixabay.com/photo/2015/04/08/13/13/ice-cream-712667_960_720.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Tiramisú",
+    "categoria": "Postre",
+    "descripcion": "Postre italiano clásico",
+    "precio": 4.00,
+    "imagen": "https://cdn.pixabay.com/photo/2015/03/26/09/54/tiramisu-690038_960_720.jpg"
   }
 ]

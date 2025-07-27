@@ -1,3 +1,77 @@
+
+.menu-content {
+  --background: #ffffff;
+  padding: 16px;
+}
+
+.segment-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-bottom: 16px;
+}
+
+.segment-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-segment {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 6px;
+  min-width: max-content;
+}
+
+.segment-button-custom {
+  --color: #000; 
+  --color-checked: #fff;
+  --background-checked: #c50000;
+  --indicator-color: transparent;
+  border-radius: 15px;
+  font-weight: bold;
+  min-width: 100px;
+  height: auto;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px 12px;
+}
+
+.segment-label-custom {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.2;
+  white-space: normal;
+  color: black !important; 
+}
+
+.segment-button-custom.ion-activated .segment-label-custom {
+  color: white !important;
+}
+
+.carrito-toolbar {
+  --background: #c50000;
+}
+
+.carrito-title {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
 .menu-info {
   display: flex;
   justify-content: space-between;
@@ -13,15 +87,22 @@
   justify-content: space-between;
 }
 
+.menu-texto h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
 .menu-precio {
   font-weight: 600;
   margin: 4px 0;
-  color: #ffffff;
+  color: #000;
 }
 
 .menu-desc {
   font-size: 14px;
-  color: #d1d1d1;
+  color: #6b6b6b;
 }
 
 .menu-imagen-container {
@@ -48,4 +129,7 @@
   padding: 0;
   font-size: 20px;
   z-index: 1;
+  --background: #c50000;
+  color: white;
+  font-weight: bold;
 }
