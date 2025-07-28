@@ -1,4 +1,4 @@
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect, Route, useLocation } from 'react-router-dom';
 import {
   IonApp,
   IonIcon,
@@ -10,67 +10,54 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import { pizza, cart } from 'ionicons/icons';
 import { useEffect } from 'react';
-import { home, pizza, cart } from 'ionicons/icons';
 
-import Tab1 from './pages/Tab1'; // Menú
-import Tab2 from './pages/Tab2'; // Pedidos
-import Tab3 from './pages/Tab3'; // Inicio
+import Tab1 from './pages/Tab1';
+import Tab2 from './pages/Tab2';
+import Tab3 from './pages/Tab3';
 
 import '@ionic/react/css/core.css';
-import '@ionic/react/css/normalize.css';
-import '@ionic/react/css/structure.css';
-import '@ionic/react/css/typography.css';
-import '@ionic/react/css/padding.css';
-import '@ionic/react/css/float-elements.css';
-import '@ionic/react/css/text-alignment.css';
-import '@ionic/react/css/text-transformation.css';
-import '@ionic/react/css/flex-utils.css';
-import '@ionic/react/css/display.css';
-import '@ionic/react/css/palettes/dark.system.css';
-
 import './theme/variables.css';
 
 setupIonicReact();
 
 const AppContent: React.FC = () => {
+  const location = useLocation();
+
   useEffect(() => {
-    if (window.location.pathname !== '/tab3') {
+    // Redirigir a tab3 en cada carga o F5 (pero solo una vez)
+    const redirected = sessionStorage.getItem('redirectedToTab3');
+
+    if (!redirected) {
+      sessionStorage.setItem('redirectedToTab3', 'true');
       window.location.replace('/tab3');
     }
   }, []);
 
+  const isTab3 = location.pathname === '/tab3';
+
   return (
     <IonTabs>
       <IonRouterOutlet>
-        <Route exact path="/tab1">
-          <Tab1 />
-        </Route>
-        <Route exact path="/tab2">
-          <Tab2 />
-        </Route>
-        <Route exact path="/tab3">
-          <Tab3 />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/tab3" />
-        </Route>
+        <Route exact path="/tab1" component={Tab1} />
+        <Route exact path="/tab2" component={Tab2} />
+        <Route exact path="/tab3" component={Tab3} />
+        <Route exact path="/" render={() => <Redirect to="/tab3" />} />
       </IonRouterOutlet>
 
-      <IonTabBar slot="bottom">
-        <IonTabButton tab="tab3" href="/tab3">
-          <IonIcon icon={home} />
-          <IonLabel>Inicio</IonLabel>
-        </IonTabButton>
-        <IonTabButton tab="tab1" href="/tab1">
-          <IonIcon icon={pizza} />
-          <IonLabel>Menú</IonLabel>
-        </IonTabButton>
-        <IonTabButton tab="tab2" href="/tab2">
-          <IonIcon icon={cart} />
-          <IonLabel>Pedidos</IonLabel>
-        </IonTabButton>
-      </IonTabBar>
+      {!isTab3 && (
+        <IonTabBar slot="bottom">
+          <IonTabButton tab="tab1" href="/tab1">
+            <IonIcon icon={pizza} />
+            <IonLabel>Menú</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab2" href="/tab2">
+            <IonIcon icon={cart} />
+            <IonLabel>Pedidos</IonLabel>
+          </IonTabButton>
+        </IonTabBar>
+      )}
     </IonTabs>
   );
 };

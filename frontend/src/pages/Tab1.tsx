@@ -8,7 +8,7 @@ import {
   IonToast,
   IonSegment,
   IonSegmentButton,
-  IonLabel
+  IonLabel,
 } from "@ionic/react";
 import { useEffect, useState, useContext, useRef } from "react";
 import "./Tab1.css";
@@ -25,7 +25,8 @@ interface Plato {
 
 const Tab1: React.FC = () => {
   const [menu, setMenu] = useState<Plato[]>([]);
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState<string>("Todos");
+  const [categoriaSeleccionada, setCategoriaSeleccionada] =
+    useState<string>("Todos");
   const { agregarPedido } = useContext(PedidoContext);
   const [mostrarToast, setMostrarToast] = useState(false);
   const segmentRef = useRef<HTMLDivElement>(null);
@@ -66,6 +67,19 @@ const Tab1: React.FC = () => {
       </IonHeader>
 
       <IonContent className="menu-content">
+        <div className="billboard-container">
+          {menu.slice(0, 4).map((plato) => (
+            <div key={plato.id} className="billboard-item">
+              <img
+                src={plato.imagen}
+                alt={plato.nombre}
+                className="billboard-img"
+              />
+              <div className="billboard-nombre">{plato.nombre}</div>
+            </div>
+          ))}
+        </div>
+
         <div className="segment-wrapper" ref={segmentRef}>
           <IonSegment
             value={categoriaSeleccionada}
@@ -75,7 +89,11 @@ const Tab1: React.FC = () => {
             className="menu-segment"
           >
             {categorias.map((cat) => (
-              <IonSegmentButton key={cat} value={cat} className="segment-button-custom">
+              <IonSegmentButton
+                key={cat}
+                value={cat}
+                className="segment-button-custom"
+              >
                 <IonLabel className="segment-label-custom">{cat}</IonLabel>
               </IonSegmentButton>
             ))}

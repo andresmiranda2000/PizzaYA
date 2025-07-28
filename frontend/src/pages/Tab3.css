@@ -21,11 +21,11 @@
 }
 
 .logo-inicio .pizza-text {
-  font-weight: 400; /* normal */
+  font-weight: 400; 
   display: block;
 }
 
 .logo-inicio .ya-text {
-  font-weight: 900; /* bold */
+  font-weight: 900; 
   display: block;
 }

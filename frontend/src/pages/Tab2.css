@@ -1,4 +1,4 @@
-/* PRINCIPAL */
+
 .pedido-content {
   --background: #f5f5f5;
   padding: 16px;
@@ -75,7 +75,7 @@
   color: white;
 }
 
-/* TOOLBAR CARRITO */
+
 .carrito-toolbar {
   --background: #c50000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -90,7 +90,7 @@
   font-weight: 600;
 }
 
-/* TOOLBAR MODAL */
+
 .modal-toolbar {
   --background: #c50000;
   color: #fff;
@@ -103,7 +103,7 @@
   text-align: center;
 }
 
-/* BLANCO */
+
 .modal-content {
   background: #ffffff !important;
   --background: #ffffff !important;
@@ -121,7 +121,7 @@ ion-modal::part(content) {
   background: #ffffff;
 }
 
-/* INPUTS */
+
 ion-input {
   --padding-start: 12px;
   --padding-end: 12px;
@@ -136,11 +136,11 @@ ion-input {
 
 ion-input .label-text,
 ion-label {
-  color: #ffffff !important;
+  color: #000000 !important;
   font-weight: bold;
 }
 
-/* BOTONES MODAL */
+
 .modal-form ion-button {
   margin-top: 10px;
   font-weight: bold;
@@ -158,7 +158,7 @@ ion-label {
   color: #000;
 }
 
-/* BOTÓN ELIMINAR */
+
 ion-item-option {
   display: flex;
   align-items: center;
@@ -175,7 +175,7 @@ ion-item-option span {
   font-size: 24px;
 }
 
-/* LIMPIEZA */
+
 ion-item::part(native) {
   border-bottom: none !important;
   box-shadow: none !important;

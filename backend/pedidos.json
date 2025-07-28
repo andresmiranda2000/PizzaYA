@@ -116,5 +116,21 @@
     ],
     "total": 8.5,
     "fecha": "2025-07-27T17:34:59.774Z"
+  },
+  {
+    "id": 1753654563947,
+    "nombre": "2025 AGOSTO",
+    "apellido": "asdsa",
+    "correo": "asda",
+    "direccion": "asdasd",
+    "articulos": [
+      {
+        "plato": "Pizza Pepperoni",
+        "precio": 8.5,
+        "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
+      }
+    ],
+    "total": 8.5,
+    "fecha": "2025-07-27T22:16:03.947Z"
   }
 ]
