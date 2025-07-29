@@ -7,14 +7,13 @@ const Tab3: React.FC = () => {
   const history = useHistory();
 
   useEffect(() => {
-  sessionStorage.removeItem('redirectedToTab3'); 
-  const timer = setTimeout(() => {
-    history.push("/tab1");
-  }, 3000);
+    sessionStorage.removeItem("redirectedToTab3");
+    const timer = setTimeout(() => {
+      history.push("/tab1");
+    }, 3000);
 
-  return () => clearTimeout(timer);
-}, []);
-
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <IonPage>

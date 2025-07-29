@@ -1,0 +1,51 @@
+.admin-content {
+  padding: 16px;
+  background-color: #f5f5f5;
+}
+
+.admin-card {
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.admin-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.admin-total {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: right;
+  color: #222;
+}
+
+.admin-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.admin-vacio {
+  text-align: center;
+  font-size: 18px;
+  padding: 40px;
+  color: #666;
+}

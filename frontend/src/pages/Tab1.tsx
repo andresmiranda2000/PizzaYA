@@ -25,7 +25,8 @@ interface Plato {
 
 const Tab1: React.FC = () => {
   const [menu, setMenu] = useState<Plato[]>([]);
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState<string>("Todos");
+  const [categoriaSeleccionada, setCategoriaSeleccionada] =
+    useState<string>("Todos");
   const { agregarPedido } = useContext(PedidoContext);
   const [mostrarToast, setMostrarToast] = useState(false);
   const segmentRef = useRef<HTMLDivElement>(null);
@@ -41,7 +42,7 @@ const Tab1: React.FC = () => {
       id: Date.now(),
       plato: plato.nombre,
       precio: plato.precio,
-      nombre: "", 
+      nombre: "",
       apellido: "",
       correo: "",
       direccion: "",

@@ -1,4 +1,14 @@
-body, h1, h2, h3, h4, h5, h6, p, button, input, ion-label, ion-title {
-  font-family: 'Poppins', sans-serif !important;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+input,
+ion-label,
+ion-title {
+  font-family: "Poppins", sans-serif !important;
 }
-

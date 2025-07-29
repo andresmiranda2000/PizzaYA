@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useState } from "react";
 
 export interface Pedido {
   id: number;
@@ -23,7 +23,9 @@ export const PedidoContext = createContext<PedidoContextType>({
   agregarPedido: () => {},
 });
 
-export const PedidoProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const PedidoProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [pedidos, setPedidos] = useState<Pedido[]>([]);
 
   const agregarPedido = (pedido: Pedido) => {

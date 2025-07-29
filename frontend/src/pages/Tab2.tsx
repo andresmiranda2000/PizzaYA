@@ -33,6 +33,7 @@ interface PedidoAntiguo {
     imagen: string;
   }[];
   fecha: string;
+  estado?: string;
 }
 
 const Tab2: React.FC = () => {
@@ -52,7 +53,10 @@ const Tab2: React.FC = () => {
     try {
       const res = await fetch("http://localhost:4000/api/pedidos");
       const data = await res.json();
-      setPedidosAnteriores(data);
+      const filtrados = data.filter(
+        (p: PedidoAntiguo) => p.estado !== "descartado"
+      );
+      setPedidosAnteriores(filtrados);
     } catch (err) {
       console.error("Error al cargar pedidos anteriores:", err);
     }
