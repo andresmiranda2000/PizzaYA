@@ -11,7 +11,6 @@ export interface Pedido {
   imagen: string;
 }
 
-
 interface PedidoContextType {
   pedidos: Pedido[];
   setPedidos: (p: Pedido[]) => void;

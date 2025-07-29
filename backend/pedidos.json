@@ -1,89 +1,42 @@
 [
   {
-    "id": 1753479539964,
-    "plato": "Pizza Pepperoni",
-    "precio": 8.5,
-    "nombre": "Andres",
-    "apellido": "Miranda",
-    "correo": "",
-    "direccion": "BKHGLSH"
-  },
-  {
-    "id": 1753577563009,
-    "plato": "Pizza Margarita",
-    "precio": 7.5,
-    "nombre": "",
-    "apellido": "",
-    "correo": "",
-    "direccion": ""
-  },
-  {
-    "id": 1753578432168,
-    "plato": "Pizza Pepperoni",
-    "precio": 8.5,
-    "nombre": "andres",
-    "apellido": "miranda",
-    "correo": "andres@uisek.com",
-    "direccion": "",
-    "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
-  },
-  {
-    "id": 1753578432535,
-    "plato": "Pizza Margarita",
-    "precio": 7.5,
-    "nombre": "andres",
-    "apellido": "miranda",
-    "correo": "andres@uisek.com",
-    "direccion": "",
-    "imagen": "https://t3.ftcdn.net/jpg/10/31/10/12/360_F_1031101290_diS1RPJnOwIc4J6dUY0JPZiMeaFPJHoS.jpg"
-  },
-  {
-    "id": 1753578433315,
-    "plato": "Refresco",
-    "precio": 1.5,
-    "nombre": "andres",
-    "apellido": "miranda",
-    "correo": "andres@uisek.com",
-    "direccion": "",
-    "imagen": "https://media.istockphoto.com/id/1225230295/es/foto/cierre-el-vaso-de-refrescante-cola.jpg?s=612x612&w=0&k=20&c=o60iA_MJGuwRUYmd8AK8lp-LGcNInE1jFTsfHtYN1iw="
-  },
-  {
-    "id": 1753578433764,
-    "plato": "Pizza Pepperoni",
-    "precio": 8.5,
-    "nombre": "andres",
-    "apellido": "miranda",
-    "correo": "andres@uisek.com",
-    "direccion": "",
-    "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
-  },
-  {
-    "id": 1753578434354,
-    "plato": "Pizza Pepperoni",
-    "precio": 8.5,
-    "nombre": "andres",
-    "apellido": "miranda",
-    "correo": "andres@uisek.com",
-    "direccion": "",
-    "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
-  },
-  {
-    "id": 1753578434694,
-    "plato": "Pizza Margarita",
-    "precio": 7.5,
-    "nombre": "andres",
-    "apellido": "miranda",
-    "correo": "andres@uisek.com",
-    "direccion": "",
-    "imagen": "https://t3.ftcdn.net/jpg/10/31/10/12/360_F_1031101290_diS1RPJnOwIc4J6dUY0JPZiMeaFPJHoS.jpg"
-  },
-  {
-    "id": 1753579104915,
-    "nombre": "Andres",
-    "apellido": "Miranda",
-    "correo": "",
-    "direccion": "BKHGLSH",
+    "id": 1753756221424,
+    "nombre": "2025 PRUEBA",
+    "apellido": "AASDA",
+    "correo": "SASD",
+    "direccion": "ASDDAS",
     "articulos": [
+      {
+        "plato": "Pizza Pepperoni",
+        "precio": 8.5,
+        "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
+      }
+    ],
+    "total": 8.5,
+    "fecha": "2025-07-29T02:30:21.424Z"
+  },
+  {
+    "id": 1753756653740,
+    "nombre": "PRUEBA JULIO 2025",
+    "apellido": "ASDASD",
+    "correo": "ASDASD",
+    "direccion": "ASDASDASD",
+    "articulos": [
+      {
+        "plato": "Pizza Pepperoni",
+        "precio": 8.5,
+        "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
+      },
+      {
+        "plato": "Pizza Margarita",
+        "precio": 7.5,
+        "imagen": "https://t3.ftcdn.net/jpg/10/31/10/12/360_F_1031101290_diS1RPJnOwIc4J6dUY0JPZiMeaFPJHoS.jpg"
+      },
+      {
+        "plato": "Pizza Pepperoni",
+        "precio": 8.5,
+        "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
+      },
       {
         "plato": "Pizza Pepperoni",
         "precio": 8.5,
@@ -97,40 +50,20 @@
       {
         "plato": "Refresco",
         "precio": 1.5,
-        "imagen": "https://media.istockphoto.com/id/1225230295/es/foto/cierre-el-vaso-de-refrescante-cola.jpg?s=612x612&w=0&k=20&c=o60iA_MJGuwRUYmd8AK8lp-LGcNInE1jFTsfHtYN1iw="
-      }
-    ]
-  },
-  {
-    "id": 1753637699774,
-    "nombre": "ANDRES 2025",
-    "apellido": "Miranda",
-    "correo": "asdasd",
-    "direccion": "BKHGLSH",
-    "articulos": [
+        "imagen": "https://static.vecteezy.com/system/resources/previews/002/181/631/non_2x/glass-of-soda-on-a-table-free-photo.jpg"
+      },
       {
-        "plato": "Pizza Pepperoni",
-        "precio": 8.5,
-        "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
+        "plato": "Refresco",
+        "precio": 1.5,
+        "imagen": "https://static.vecteezy.com/system/resources/previews/002/181/631/non_2x/glass-of-soda-on-a-table-free-photo.jpg"
+      },
+      {
+        "plato": "Limonada Natural",
+        "precio": 2,
+        "imagen": "https://img.pikbest.com/wp/202345/ice-lemonade-iced-pink-drink-on-a-table_9602080.jpg!w700wp"
       }
     ],
-    "total": 8.5,
-    "fecha": "2025-07-27T17:34:59.774Z"
-  },
-  {
-    "id": 1753654563947,
-    "nombre": "2025 AGOSTO",
-    "apellido": "asdsa",
-    "correo": "asda",
-    "direccion": "asdasd",
-    "articulos": [
-      {
-        "plato": "Pizza Pepperoni",
-        "precio": 8.5,
-        "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
-      }
-    ],
-    "total": 8.5,
-    "fecha": "2025-07-27T22:16:03.947Z"
+    "total": 45.5,
+    "fecha": "2025-07-29T02:37:33.740Z"
   }
 ]

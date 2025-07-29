@@ -14,7 +14,6 @@ app.get('/api/menu', (req, res) => {
   const data = fs.readFileSync(menuFile);
   res.json(JSON.parse(data));
 });
-
 // GET pedidos
 app.get('/api/pedidos', (req, res) => {
   try {
@@ -26,7 +25,6 @@ app.get('/api/pedidos', (req, res) => {
     res.status(500).json({ error: 'Error interno del servidor' });
   }
 });
-
 // POST pedido nuevo
 app.post('/api/pedidos', (req, res) => {
   const { nombre, apellido, correo, direccion, articulos, total } = req.body;
@@ -52,7 +50,6 @@ app.post('/api/pedidos', (req, res) => {
 
   res.status(201).json({ mensaje: 'Pedido guardado' });
 });
-
 // DELETE pedido por ID
 app.delete('/api/pedidos/:id', (req, res) => {
   const data = JSON.parse(fs.readFileSync(pedidosFile));
