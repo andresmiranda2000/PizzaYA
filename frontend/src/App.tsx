@@ -54,7 +54,7 @@ const AppContent: React.FC = () => {
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon icon={cart} />
-            <IonLabel>Pedidos</IonLabel>
+            <IonLabel>Tú Pedido</IonLabel>
           </IonTabButton>
         </IonTabBar>
       )}
