@@ -1,4 +1,4 @@
-import { Redirect, Route, useLocation } from 'react-router-dom';
+import { Redirect, Route, useLocation, useHistory } from 'react-router-dom';
 import {
   IonApp,
   IonIcon,
@@ -24,14 +24,14 @@ setupIonicReact();
 
 const AppContent: React.FC = () => {
   const location = useLocation();
+  const history = useHistory();
 
   useEffect(() => {
-    // Redirigir a tab3 en cada carga o F5 (pero solo una vez)
     const redirected = sessionStorage.getItem('redirectedToTab3');
 
-    if (!redirected) {
+    if (!redirected && location.pathname !== '/tab3') {
       sessionStorage.setItem('redirectedToTab3', 'true');
-      window.location.replace('/tab3');
+      history.replace('/tab3'); 
     }
   }, []);
 
