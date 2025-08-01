@@ -38,3 +38,4 @@ export const PedidoProvider: React.FC<{ children: React.ReactNode }> = ({
     </PedidoContext.Provider>
   );
 };
+
