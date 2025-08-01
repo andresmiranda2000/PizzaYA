@@ -1,0 +1,24 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: backend-pedidos
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./backend/pedidos.json:/app/pedidos.json
+      - ./backend/menu.json:/app/menu.json
+    restart: always
+
+  frontend:
+    container_name: frontend-app
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "5173:5173"  
+    command: sh -c "npm install && npm run dev -- --host"
+    restart: always
+
+

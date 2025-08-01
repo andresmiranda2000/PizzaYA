@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pizza Pepperoni",
+    "categoria": "Plato fuerte",
+    "descripcion": "Pizza con pepperoni, salsa de tomate y queso mozzarella",
+    "precio": 8.50,
+    "imagen": "https://img.freepik.com/foto-gratis/rebanada-clasica-pizza-pepperoni-rollos-pimienta-verde_114579-1963.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Pizza Margarita",
+    "categoria": "Plato fuerte",
+    "descripcion": "Pizza clásica con salsa de tomate, queso y albahaca",
+    "precio": 7.50,
+    "imagen": "https://t3.ftcdn.net/jpg/10/31/10/12/360_F_1031101290_diS1RPJnOwIc4J6dUY0JPZiMeaFPJHoS.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Pizza Hawaiana",
+    "categoria": "Plato fuerte",
+    "descripcion": "Pizza con jamón, piña y mozzarella",
+    "precio": 9.00,
+    "imagen": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Pizza Cuatro Quesos",
+    "categoria": "Plato fuerte",
+    "descripcion": "Pizza con mezcla de quesos",
+    "precio": 8.00,
+    "imagen": "https://img.freepik.com/fotos-premium/deliciosos-quadgro-formaggi-pizza-cuatro-quesos-vista-superior-mesa-madera_251318-28.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Hamburguesa Clásica",
+    "categoria": "Plato fuerte",
+    "descripcion": "Carne de res, lechuga, tomate y mayonesa",
+    "precio": 6.50,
+    "imagen": "https://media.istockphoto.com/id/1190916493/es/foto/hamburguesa-cl%C3%A1sica-sobre-mesa-de-madera.jpg?s=170667a&w=0&k=20&c=Hs1YHiAtcQGZ9V2v93_VqNgXelXquP5E-qBSwcRgRZk="
+  },
+  {
+    "id": 11,
+    "nombre": "Wrap de Pollo",
+    "categoria": "Plato fuerte",
+    "descripcion": "Tortilla rellena de pollo a la plancha, vegetales y salsa",
+    "precio": 5.50,
+    "imagen": "https://media.istockphoto.com/id/927471164/es/foto/pollo-a-la-parrilla-saludable-y-envolturas-de-perejil-con-queso-servido-con-yogur-griego.jpg?s=612x612&w=0&k=20&c=0Ym-nv_aJ5KBTQ6UOyojICeh5KIy2ZYuiRNGXxzxrXk="
+  },
+  {
+    "id": 12,
+    "nombre": "Lasaña Boloñesa",
+    "categoria": "Plato fuerte",
+    "descripcion": "Lasaña casera con salsa de carne y queso",
+    "precio": 9.00,
+    "imagen": "https://media.istockphoto.com/id/1208130713/es/foto/el-concepto-de-cocina-italiana-porci%C3%B3n-de-sabrosa-lasa%C3%B1a-al-horno-sobre-mesa-de-madera-r%C3%BAstica.jpg?s=612x612&w=0&k=20&c=6BUBpUnkDJLLjX3QIGpJE1qFbqfrwoo-Oc24sl4QHpQ="
+  },
+  {
+    "id": 13,
+    "nombre": "Sándwich Vegetariano",
+    "categoria": "Plato fuerte",
+    "descripcion": "Pan artesanal con vegetales frescos, hummus y queso",
+    "precio": 5.00,
+    "imagen": "https://img.freepik.com/foto-gratis/sandwich-vegetariano-ensalada-tomates-sobre-superficie-mesa-madera_613910-7441.jpg?t=st=1752271376~exp=1752274976~hmac=83d5cd0167595ffebd209a6d2bab7def5da6b2641ee1c52b943abd486289da75"
+  },
+
+  {
+    "id": 4,
+    "nombre": "Refresco",
+    "categoria": "Bebidas",
+    "descripcion": "Bebida gaseosa",
+    "precio": 1.50,
+    "imagen": "https://static.vecteezy.com/system/resources/previews/002/181/631/non_2x/glass-of-soda-on-a-table-free-photo.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Limonada Natural",
+    "categoria": "Bebidas",
+    "descripcion": "Refrescante limonada",
+    "precio": 2.00,
+    "imagen": "https://img.pikbest.com/wp/202345/ice-lemonade-iced-pink-drink-on-a-table_9602080.jpg!w700wp"
+  },
+  {
+    "id": 14,
+    "nombre": "Té Helado",
+    "categoria": "Bebidas",
+    "descripcion": "Té frío con sabor a limón",
+    "precio": 1.75,
+    "imagen": "https://images.unsplash.com/photo-1694953592580-0953c63ffec2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 15,
+    "nombre": "Agua Mineral",
+    "categoria": "Bebidas",
+    "descripcion": "Botella de agua con gas",
+    "precio": 1.20,
+    "imagen": "https://st.depositphotos.com/1085101/1994/i/450/depositphotos_19949383-stock-photo-glass-of-cold-mineral-water.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Café Frío",
+    "categoria": "Bebidas",
+    "descripcion": "Café espresso con hielo y leche",
+    "precio": 2.50,
+    "imagen": "https://static.vecteezy.com/system/resources/previews/001/781/720/non_2x/glass-of-iced-coffee-on-a-wooden-table-at-a-cafe-free-photo.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Smoothie de Fresa",
+    "categoria": "Bebidas",
+    "descripcion": "Batido natural de fresa y yogur",
+    "precio": 3.00,
+    "imagen": "https://i.pinimg.com/736x/10/2b/0c/102b0c6a27384dbf06c55174778a8584.jpg"
+  },
+
+  {
+    "id": 6,
+    "nombre": "Brownie",
+    "categoria": "Postre",
+    "descripcion": "Brownie de chocolate",
+    "precio": 3.00,
+    "imagen": "https://media.istockphoto.com/id/689260420/es/foto/delicioso-brownie-casero-con-salsa-de-chocolate-y-caramelo-en-la-mesa-enfoque-selectivo.jpg?s=612x612&w=0&k=20&c=B8kY5HKxKbd2zvaSR5cfS8HLxmnd4xO_b4VNHqvuX04="
+  },
+  {
+    "id": 7,
+    "nombre": "Helado de Vainilla",
+    "categoria": "Postre",
+    "descripcion": "Delicioso helado artesanal",
+    "precio": 2.50,
+    "imagen": "https://pandebroa.es/wp-content/uploads/2020/05/DSC_8502.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Tiramisú",
+    "categoria": "Postre",
+    "descripcion": "Postre italiano",
+    "precio": 4.00,
+    "imagen": "https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/7f45d6f8807ebc775928651a3398dce9.png"
+  },
+  {
+    "id": 18,
+    "nombre": "Cheesecake de Frambuesa",
+    "categoria": "Postre",
+    "descripcion": "Tarta de queso con mermelada de frambuesa",
+    "precio": 3.80,
+    "imagen": "https://ombligoparao.cl/wp-content/uploads/2023/04/Receta-de-Cheesecake-de-Frambuesa.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Donas Glaseadas",
+    "categoria": "Postre",
+    "descripcion": "Donas esponjosas cubiertas con glaseado de azúcar",
+    "precio": 1.50,
+    "imagen": "https://comedera.com/wp-content/uploads/sites/9/2023/04/donas-glaseadas-PG_D180520002.jpg?w=4096"
+  },
+  {
+    "id": 20,
+    "nombre": "Mousse de Chocolate",
+    "categoria": "Postre",
+    "descripcion": "Postre cremoso de chocolate oscuro",
+    "precio": 3.20,
+    "imagen": "https://www.recetasnestlecam.com/sites/default/files/srh_recipes/369562012750bd46ceaeef5d59a23229.jpg"
+  },
+  {
+    "id": 21,
+    "nombre": "Galletas de Avena",
+    "categoria": "Postre",
+    "descripcion": "Galletas caseras con avena y pasas",
+    "precio": 1.80,
+    "imagen": "https://media.istockphoto.com/id/1440332767/es/foto/galletas-de-avena-sobre-una-mesa-de-madera.jpg?s=612x612&w=0&k=20&c=pyA-4r-lmR7cFppkLd2Bhu1Sm4T2y86VnB6BvIpF5zw="
+  }
+]

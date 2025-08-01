@@ -1,0 +1,176 @@
+.menu-content {
+  --background: #ffffff;
+  padding: 16px;
+}
+
+.segment-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-bottom: 16px;
+}
+
+.segment-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-segment {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 6px;
+  min-width: max-content;
+}
+
+.segment-button-custom {
+  --color: #000;
+  --color-checked: #fff;
+  --background-checked: #c50000;
+  --indicator-color: transparent;
+  border-radius: 15px;
+  font-weight: bold;
+  min-width: 100px;
+  height: auto;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px 12px;
+}
+
+.segment-label-custom {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.2;
+  white-space: normal;
+  color: black !important;
+}
+
+.segment-button-custom.ion-activated .segment-label-custom {
+  color: white !important;
+}
+
+.carrito-toolbar {
+  --background: #c50000;
+}
+
+.carrito-title {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.menu-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 16px;
+  gap: 12px;
+}
+
+.menu-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-texto h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.menu-precio {
+  font-weight: 600;
+  margin: 4px 0;
+  color: #000;
+}
+
+.menu-desc {
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.menu-imagen-container {
+  position: relative;
+  width: 120px;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.menu-imagen {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.menu-boton {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 20px;
+  z-index: 1;
+  --background: #c50000;
+  color: white;
+  font-weight: bold;
+}
+
+.billboard-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin: 16px 0;
+  padding-bottom: 4px;
+  scroll-snap-type: x mandatory;
+}
+
+.billboard-item {
+  position: relative;
+  flex: 0 0 auto;
+  width: 220px;
+  height: 120px;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.billboard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.billboard-nombre {
+  position: absolute;
+  bottom: 6px;
+  left: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}

@@ -1,0 +1,185 @@
+.pedido-content {
+  --background: #f5f5f5;
+  padding: 16px;
+}
+
+.pedido-vacio {
+  text-align: center;
+  margin-top: 50px;
+  color: #666;
+  font-size: 18px;
+}
+
+.pedido-slide {
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.pedido-item {
+  --background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 12px;
+  border: none !important;
+}
+
+.pedido-texto {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.pedido-texto h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+
+.precio {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.pedido-imagen {
+  width: 75px;
+  height: 75px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.pedido-total {
+  text-align: right;
+  padding: 12px 16px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.pedido-boton {
+  padding: 0 16px 24px;
+}
+
+.go-button {
+  --background: #c50000;
+  --border-radius: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  color: white;
+}
+
+.carrito-toolbar {
+  --background: #c50000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.carrito-title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.modal-toolbar {
+  --background: #c50000;
+  color: #fff;
+}
+
+.modal-title {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+
+.modal-content {
+  background: #ffffff !important;
+  --background: #ffffff !important;
+  color: #000000 !important;
+}
+
+ion-modal::part(content) {
+  background: #ffffff !important;
+  --background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.modal-form {
+  padding: 16px;
+  background: #ffffff;
+}
+
+ion-input {
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  --background: #f7f7f7;
+  --color: #000;
+  --border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+ion-input .label-text,
+ion-label {
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+.modal-form ion-button {
+  margin-top: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  --border-radius: 8px;
+}
+
+.modal-form ion-button:first-of-type {
+  --background: #c50000;
+  color: white;
+}
+
+.modal-form ion-button:last-of-type {
+  --background: #ccc;
+  color: #000;
+}
+
+ion-item-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5px;
+  background-color: #c50000;
+  color: white;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 8px;
+}
+
+ion-item-option span {
+  font-size: 24px;
+}
+
+ion-item::part(native) {
+  border-bottom: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+ion-input input {
+  color: #333 !important;
+  caret-color: #333 !important;
+}
+
+ion-input .label-text {
+  color: #333 !important;
+}
